@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function fetchWeatherData(locationType, locationInput) {
-  const apiKey = 'REDACTED';
+  const apiKey = API_KEY;
   let url = `https://api.openweathermap.org/data/2.5/forecast?appid=${apiKey}&units=metric`;
 
   switch (locationType) {
