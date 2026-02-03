@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>OpenWeather App</h1>
+  <form id="weatherForm">
+    <div>
+      <input type="radio" id="city" name="locationType" value="city" checked>
+      <label for="city">City Name</label>
+    </div>
+    <div>
+      <input type="radio" id="zip" name="locationType" value="zip">
+      <label for="zip">ZIP Code</label>
+    </div>
+    <div>
+      <input type="radio" id="coordinates" name="locationType" value="coordinates">
+      <label for="coordinates">Coordinates</label>
+    </div>
+    <input type="text" id="locationInput" placeholder="Enter location...">
+    <button type="submit">Get Forecast</button>
+  </form>
+  <div id="weatherData"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
